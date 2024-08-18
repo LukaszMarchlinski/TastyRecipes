@@ -1,0 +1,227 @@
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: var(--background-color); /* Opcjonalne tło */
+}
+
+/* Kontener formularza */
+.login-form-container {
+    max-width: 900px; 
+    width: 100%; 
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; 
+    position: relative; 
+}
+
+/* Stylizacja przycisku home */
+.btn-home {
+    position: absolute !important;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--button) !important;
+    color: var(--white-tx) !important;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    box-sizing: border-box; 
+    z-index: 10; 
+    margin: auto;
+    
+}
+
+.btn-home:hover {
+    background-color: var(--button-hover) !important;
+}
+.btn-home-ico {
+    display: flex;
+    width: 24px;
+    height: 24px;
+}
+
+/* Stylizacja formularza */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+
+/* Stylizacja kontenera zawartości formularza */
+.login-form-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+}
+
+/* Stylizacja kontenera obrazu */
+.login-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px; 
+}
+
+.login-image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Stylizacja nagłówka formularza */
+.form-fields-container h2 {
+    font-size: 24px; 
+    font-weight: 600; 
+    color: var(--d-brown); 
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+/* Stylizacja kontenera pól formularza */
+.form-fields-container {
+    flex: 0 0 300px; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* Stylizacja grupy formularza */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Stylizacja przycisków formularza */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Stylizacja przycisku 'Sign In' */
+.btn-sign-in {
+    width: 140px;
+    height: 40px;
+    background-color: var(--button) !important;
+    color: var(--white-tx) !important;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
+}
+
+.btn-sign-in:hover {
+    background-color: var(--button-hover) !important;
+}
+
+/* Stylizacja przycisku 'Register' */
+.btn-register {
+    width: 140px;
+    height: 40px;
+    background-color: var(--button) !important;
+    color: var(--white-tx) !important;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
+}
+
+.btn-register:hover {
+    background-color: var(--button-hover) !important;
+}
+
+/* Stylizacja dodatkowych opcji (checkbox) */
+.custom-checkbox {
+    color: var(--button) !important;
+}
+
+.custom-checkbox.Mui-checked {
+    color: var(--button-hover) !important;
+}
+
+/* Stylizacja dla FormControlLabel */
+.custom-form-label .MuiFormControlLabel-label {
+    color: var(--medium-brown-tx);
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+.custom-form-label:hover .MuiFormControlLabel-label {
+    color: var(--dark-brown-tx);
+}
+
+/* Dodatkowa opcja */
+.additional-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.forgot-password {
+    color: var(--m-brown);
+    cursor: pointer;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: var(--d-brown);
+}
+
+/* Stylizacja tekstu społecznościowego */
+.social-login-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    color: var(--m-brown);
+    margin: 0;
+}
+
+/* Stylizacja przycisków społecznościowych */
+.social-login-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.social-login-button {
+    width: 90px;
+    height: 40px;
+    background-color: var(--button) !important;
+    color: var(--white-tx);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.social-login-button:hover {
+    background-color: var(--button-hover) !important;
+}
+
+.social-icon {
+    font-size: 25px;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+    box-shadow: 0 0 0 1000px white inset;
+    -webkit-text-fill-color: #000; /* Kolor tekstu */
+    transition: background-color 5000s ease-in-out 0s;
+}

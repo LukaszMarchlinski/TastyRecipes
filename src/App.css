@@ -1,0 +1,16 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Zapewnia, że strona ma co najmniej wysokość ekranu */
+}
+
+
+
+.main-content {
+    max-width: 1200px; /* Maksymalna szerokość kontenera */
+    margin: 0 auto; /* Wyśrodkowanie kontenera */
+    padding: 0px; /* Wewnętrzne marginesy kontenera */
+    background-color: white; /* Tło dla kontenera z zawartością */
+}
+
+

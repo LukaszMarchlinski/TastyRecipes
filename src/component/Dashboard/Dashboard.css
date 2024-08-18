@@ -1,0 +1,99 @@
+.dashboard-background {
+    background-image: url(../../../public/assets/images/Header/Dashboard-background.png); 
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin-left: calc(-50vw + 50%); 
+    margin-right: calc(-50vw + 50%); 
+}
+
+.top-bar {
+    width: 100vw; 
+    height: 10px; 
+    margin-left: calc(-50vw + 50%); 
+    margin-right: calc(-50vw + 50%);
+    left: 0;
+    right: 0;
+    background-color: var(--m-brown); 
+}
+.dashboard-container {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dashboard-text {
+    width: 470px; 
+    text-align: justify; 
+    text-align-last: justify; 
+    margin-top: 20px;
+}
+.dashboard-text h1 {
+    color: var(--d-green);
+    text-transform: uppercase; 
+    font-family: "Titan One", sans-serif; 
+    font-size: 50px; 
+    font-weight: 400; 
+    letter-spacing: 1px; 
+    margin: 0;
+    line-height: 0.9;
+}
+
+.help-text {
+    font-family: "Titan One", sans-serif; 
+    text-transform: uppercase;
+    color: var(--l-green);
+    font-size: 52px; 
+    font-weight: 400; 
+    letter-spacing: 1px; 
+    margin: 0;
+}
+.instructions {
+    font-family: "Titan One", sans-serif; 
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 24px; 
+    font-weight: 400; 
+    letter-spacing: 1px; 
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.dashboard-button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    background-color: var(--m-brown);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+}
+
+.dashboard-button:hover {
+    background-color: var(--d-brown);
+}
+
+.dashboard-image img {
+    width: 400px;
+    height: auto;
+}

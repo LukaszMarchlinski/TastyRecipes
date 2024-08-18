@@ -1,0 +1,21 @@
+.dish-slide {
+    max-width: 1200px;
+    text-align: center;
+    padding: 10px;
+}
+
+.dish-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.dish-slide h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.dish-slide p {
+    font-size: 0.9rem;
+    color: #666;
+}
