@@ -1,44 +1,34 @@
 .recipe-search {
-  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.recipe-search input,
-.recipe-search select,
-.recipe-search button {
-  margin: 10px;
+.filter-group {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.filter-group select {
   padding: 10px;
   font-size: 16px;
 }
 
-.recipe-search input {
-  width: 300px;
-}
-
-.recipe-search button {
-  cursor: pointer;
-}
-
 .recipe-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 .recipe-card {
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 10px;
-  margin: 10px;
-  max-width: 300px;
-  text-align: left;
+  padding: 16px;
+  text-align: center;
 }
 
 .recipe-card img {
   max-width: 100%;
   border-radius: 8px;
-}
-
-.error {
-  color: red;
 }

@@ -1,18 +1,15 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import RecipeSearch from '../component/RecipeSearch/RecipeSearch'; // Import komponentu wyszukiwania przepisów
-import RecipeDetails from '../component/RecipeDetails/RecipeDetails'; // Import komponentu szczegółów przepisu
+import { Route, Routes } from 'react-router-dom';
+import RecipeSearch from '../component/RecipeSearch/RecipeSearch';
+import RecipeDetails from '../component/RecipeDetails/RecipeDetails';
 
 const RecipesPage = () => {
-    return (
-        <div>
-            <h1>Recipes</h1>
-            <Routes>
-                <Route path="/" element={<RecipeSearch />} />
-                <Route path="recipe/:id" element={<RecipeDetails />} />
-            </Routes>
-        </div>
-    );
+  return (
+    <Routes>
+      <Route path="/" element={<RecipeSearch />} />
+      <Route path=":id" element={<RecipeDetails />} />
+    </Routes>
+  );
 };
 
 export default RecipesPage;
